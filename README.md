@@ -16,15 +16,6 @@ Bid, track tricks, hide bids from other players, and see who wins.
 
 ---
 
-<div align="center">
-
-| Game | Blind bidding | Scoreboard | Settings |
-|:---:|:---:|:---:|:---:|
-| <img src="screenshot-game.png" width="190"> | <img src="screenshot-blind-bidding.png" width="190"> | <img src="screenshot-scoreboard.png" width="190"> | <img src="screenshot-settings.png" width="190"> |
-
-</div>
-
----
 
 ## ✨ Features
 
@@ -71,11 +62,6 @@ Call_Break-scoreboard/
 
 Your scores, history and settings are saved in your own browser, so nothing is sent anywhere.
 
----
-
-## 🚀 Run it yourself
-
-**On your computer:** download `index.html` and open it in any browser.
 ---
 
 <div align="center">
