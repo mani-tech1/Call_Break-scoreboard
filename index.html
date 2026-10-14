@@ -2610,6 +2610,18 @@ if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
   window.addEventListener("load", fit);
   setInterval(function () { if (root.scrollWidth > root.clientWidth + 1 || window.scrollX) fit(); }, 600);
 })();
+  
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => {
+        console.log("Service Worker registered successfully!");
+      })
+      .catch((error) => {
+        console.error("Service Worker registration failed:", error);
+      });
+  });
+}
 </script>
 </body>
 </html>
