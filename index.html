@@ -2572,13 +2572,7 @@
   renderAll();
 })();
 </script>
-<script>
-if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker.register("sw.js").catch(function () {});
-  });
-}
-</script>
+
 <script>
 /* block pinch-zoom and double-tap zoom so the page behaves like a native app */
 (function () {
@@ -2610,7 +2604,7 @@ if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
   window.addEventListener("load", fit);
   setInterval(function () { if (root.scrollWidth > root.clientWidth + 1 || window.scrollX) fit(); }, 600);
 })();
-  
+  <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("./service-worker.js")
@@ -2622,6 +2616,7 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
+  </script>
 </script>
 </body>
 </html>
